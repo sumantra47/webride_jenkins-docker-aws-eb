@@ -17,4 +17,4 @@ deploy:
   bucket_path: "docker"
 
   on:
-    branch: master
+    branch: main
