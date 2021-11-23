@@ -9,7 +9,7 @@ after_success:
   
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   
-  - docker push manojkmhub/user-wishlist-app
+  - docker push manojkmgit/user-wishlist-app
 
 deploy: 
   provider: elasticbeanstalk
