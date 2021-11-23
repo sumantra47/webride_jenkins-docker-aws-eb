@@ -1,0 +1,20 @@
+language: generic
+
+services: 
+  - docker
+
+deploy: 
+  provider: elasticbeanstalk
+  region: ap-south-1
+  app: "wish-list-app"
+  env: "wish-list-env"
+
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
+
+  bucket_name: "my-first-app-bucketmkm"
+
+  bucket_path: "docker"
+
+  on:
+    branch: master
