@@ -3,6 +3,14 @@ language: generic
 services: 
   - docker
 
+
+after_success:
+  - docker build -t manojkmhub/user-wishlist-app
+  
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  
+  - docker push manojkmhub/user-wishlist-app
+
 deploy: 
   provider: elasticbeanstalk
   region: ap-south-1
