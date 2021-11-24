@@ -5,11 +5,11 @@ services:
 
 
 after_success:
-  - docker build -t manojkmgit/user-wishlist-app .
+  - docker build -t manojkmhub/user-wishlist-app .
   
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   
-  - docker push manojkmgit/user-wishlist-app
+  - docker push manojkmhub/user-wishlist-app
 
 deploy: 
   provider: elasticbeanstalk
