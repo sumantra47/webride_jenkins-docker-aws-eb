@@ -24,8 +24,8 @@ pipeline {
             post {
                 success {
                     sh 'echo "Deploying to EB"'
-                    sh 'sudo chmod 775 ./deployme.sh'
-                    sh './deployme.sh'
+                    sh 'sudo chmod 775 ./deploy_app.sh'
+                    sh './deploy_app.sh'
                 }
             }
         }
