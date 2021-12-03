@@ -1,5 +1,9 @@
 pipeline {
-    agent any 
+    agent any
+    environment {
+        AWS_ACCESS_KEY_ID = 'AKIAX5A4JUR27FSFJ2XJ'
+        AWS_SECRET_ACCESS_KEY = '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'
+    }
     stages {
         stage('Build') {
             steps {
@@ -21,6 +25,8 @@ pipeline {
                 success {
                     sh 'echo "Deploying to EB"'
                     sh 'sudo chmod 775 ./deployme.sh'
+                    sh 'export AWS_ACCESS_KEY_ID="AKIAX5A4JUR27FSFJ2XJ"'
+                    sh 'export AWS_SECRET_ACCESS_KEY="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"'
                     sh './deployme.sh'
                 }
             }
