@@ -10,7 +10,7 @@ NAME=user-wishlist-app
 EB_BUCKET=jenkins-docker-aws-eb
 
 VERSION="v6"
-ZIP="code.zip"
+ZIP="code.$VERSION.zip"
 
 aws configure set default.region ap-south-1
 
