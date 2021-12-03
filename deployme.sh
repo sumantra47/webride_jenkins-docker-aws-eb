@@ -14,7 +14,7 @@ ZIP="code.$VERSION.zip"
 
 aws configure set default.region ap-south-1
 
-# Zip up the Dockerrun file (feel free to zip up an .ebextensions directory with it)
+# Zip up the Dockerrun file
 zip -r $ZIP Dockerrun.aws.json
 
 echo "Copying new zip to S3"
