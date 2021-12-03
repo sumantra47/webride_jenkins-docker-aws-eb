@@ -9,7 +9,7 @@ environment_name="Wishlistapp-env"
 NAME=user-wishlist-app
 EB_BUCKET=jenkins-docker-aws-eb
 
-VERSION="v8"
+VERSION="v9"
 ZIP="code.$VERSION.zip"
 
 aws configure set default.region ap-south-1
