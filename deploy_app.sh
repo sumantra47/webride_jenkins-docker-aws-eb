@@ -3,11 +3,10 @@
 # usage: ./deployme.sh staging sddffafaafaf
 # license: public domain
 
-application_name="Php-app"
-environment_name="Php-env"
+application_name="WebRide"
+environment_name="Webride-env"
 
-NAME=user-wishlist-app
-EB_BUCKET=jenkins-docker-aws-eb
+EB_BUCKET=webride-bucket
 
 VERSION="v11"
 ZIP="code.$VERSION.zip"
