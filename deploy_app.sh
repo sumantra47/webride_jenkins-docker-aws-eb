@@ -8,7 +8,7 @@ environment_name="Webride-env"
 
 EB_BUCKET=webride-bucket1
 
-VERSION="v1"
+VERSION="v10"
 ZIP="code.$VERSION.zip"
 
 aws configure set default.region ap-south-1
